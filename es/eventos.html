@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Eventos | VisitoInterior</title>
+  <link rel="icon" type="image/png" href="../img/logo.png">
+
+  <link rel="stylesheet" href="../css/agenda.css">
+  <link rel="stylesheet" href="../css/footer.css">
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- LEAFLET -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+</head>
+
+<body>
+
+<header class="header">
+
+  <a href="../es/index.html" class="logo">
+    <img src="../img/logo.png" alt="VisitoInterior">
+  </a>
+
+  <nav class="menu">
+    <a href="../es/index.html">Inicio</a>
+    <a href="../es/explorar.html">Explorar</a>
+    <a class="active" href="../es/eventos.html">Eventos</a>
+    <a href="../es/contacto.html">Contacto</a>
+  </nav>
+
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="language-selector">
+
+    <button class="lang-current" id="langBtn">
+      <img src="../img/es.png" alt="Español">
+    </button>
+
+    <div class="lang-dropdown" id="langDropdown">
+
+      <a href="../paginas/agenda.html">
+        <img src="../img/pt.jpeg" alt="Português">
+      </a>
+
+      <a href="../en/events.html">
+        <img src="../img/en.png" alt="English">
+      </a>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+  <!-- =========================================
+       HERO
+  ========================================= -->
+
+<section class="agenda-hero">
+
+  <div class="hero-content">
+
+    <span class="hero-mini">CALENDARIO CULTURAL</span>
+
+    <h1>
+      Eventos.<br>
+      Cultura.<br>
+      Experiencias auténticas.
+    </h1>
+
+    <p>
+      Descubre festivales, mercados, experiencias culturales,
+      rutas de senderismo y eventos únicos en el interior de Portugal.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================
+     AGENDA
+========================================= -->
+
+<section class="agenda-layout">
+
+  <!-- EVENTOS -->
+
+  <div class="eventos-lista">
+
+    <!-- EVENTO -->
+
+    <a 
+      href="https://www.facebook.com/mourostv/posts/caminhada-trilhos-da-aldeia-v%C3%A1rzea-de-candosa-9-horas/1586441003486587/"
+      target="_blank"
+      class="evento-card"
+      data-lat="40.3571265353391"
+      data-lng="-7.974728832601044"
+    >
+
+      <div class="evento-img">
+        <img src="../img/agenda/caminhadavarzea.webp" alt="Ruta de senderismo">
+      </div>
+
+      <div class="evento-info">
+
+        <span class="evento-categoria">
+          Deporte
+        </span>
+
+        <h3>
+          Ruta de senderismo Trilhos da Aldeia
+        </h3>
+
+        <div class="evento-meta">
+
+          <p>📍 Várzea de Candosa</p>
+
+          <p>🕒 17 de mayo de 2026 · 09:00</p>
+
+        </div>
+
+      </div>
+
+    </a>
+
+
+    <!-- EVENTO -->
+
+    <a 
+      href="https://festivaldamontanha.pt/"
+      target="_blank"
+      class="evento-card"
+      data-lat="40.40129448859458"
+      data-lng="-7.540823576114702"
+    >
+
+      <div class="evento-img">
+        <img src="../img/agenda/festivaldamontanha.webp" alt="Festival de la Montaña">
+      </div>
+
+      <div class="evento-info">
+
+        <span class="evento-categoria">
+          Festivales
+        </span>
+
+        <h3>
+          Festival de la Montaña
+        </h3>
+
+        <div class="evento-meta">
+
+          <p>📍 Manteigas</p>
+
+          <p>🕒 5–7 de junio de 2026</p>
+
+        </div>
+
+      </div>
+
+    </a>
+
+
+    <!-- EVENTO -->
+
+    <a 
+      href="https://facit.tabua.pt/"
+      target="_blank"
+      class="evento-card"
+      data-lat="40.36541569780145"
+      data-lng="-8.018472499698115"
+    >
+
+      <div class="evento-img">
+        <img src="../img/agenda/facit.webp" alt="FACIT">
+      </div>
+
+      <div class="evento-info">
+
+        <span class="evento-categoria">
+          Festivales
+        </span>
+
+        <h3>
+          FACIT
+        </h3>
+
+        <div class="evento-meta">
+
+          <p>📍 Tábua</p>
+
+          <p>🕒 24–28 de junio de 2026</p>
+
+        </div>
+
+      </div>
+
+    </a>
+
+
+    <!-- EVENTO -->
+
+    <a 
+      href="https://www.facebook.com/expoholiveiradohospital/?locale=pt_PT"
+      target="_blank"
+      class="evento-card"
+      data-lat="40.36243309978096"
+      data-lng="-7.85831098280448"
+    >
+
+      <div class="evento-img">
+        <img src="../img/agenda/expoh.webp" alt="EXPOH">
+      </div>
+
+      <div class="evento-info">
+
+        <span class="evento-categoria">
+          Festivales
+        </span>
+
+        <h3>
+          EXPOH
+        </h3>
+
+        <div class="evento-meta">
+
+          <p>📍 Oliveira do Hospital</p>
+
+          <p>🕒 22–26 de julio de 2026</p>
+
+        </div>
+
+      </div>
+
+    </a>
+
+  </div>
+
+  <!-- MAPA -->
+
+  <div class="mapa-wrapper">
+    <div id="map"></div>
+  </div>
+
+</section>
+
+
+  <!-- =========================================
+       FOOTER
+  ========================================= -->
+  <footer class="footer reveal">
+
+  <div class="footer-container">
+
+    <!-- IZQUIERDA -->
+    <div class="footer-brand">
+      <img src="../img/logo.png" alt="VisitoInterior">
+
+      <h3>VISITOINTERIOR</h3>
+
+      <p>
+        Descubre el verdadero corazón del interior de Portugal.
+        Naturaleza, cultura y experiencias auténticas.
+      </p>
+    </div>
+
+    <!-- LINKS -->
+    <div class="footer-links">
+
+      <div class="footer-col">
+        <h4>Navegación</h4>
+
+        <a href="../es/index.html">Inicio</a>
+        <a href="../es/explorar.html">Explorar</a>
+        <a href="../es/eventos.html">Eventos</a>
+        <a href="../es/contacto.html">Contacto</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Eventos</h4>
+
+        <a href="../es/eventos.html">Eventos</a>
+
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+
+        <a href="mailto:visitointerior@gmail.com?subject=Contacto%20VisitoInterior">Email</a>
+        <a href="https://www.instagram.com/visitointerior?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=100064827042107">Facebook</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Información</h4>
+
+        <a href="../es/Privacidad.html">Política de Privacidad</a>
+        <a href="../es/Terminos.html">Términos y Condiciones</a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- LINHA FINAL -->
+  <div class="footer-bottom">
+    <p>
+      Copyright © <a href="../es/index.html">VisitoInterior</a> — Todos los derechos reservados |
+      Desarrollado por
+      <a href="https://www.webvelop.pt" target="_blank">Webvelop</a>
+    </p>
+  </div>
+
+</footer>
+
+
+  <!-- JS -->
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <script src="../js/agenda.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+/* =========================================
+   FOOTER PREMIUM
+========================================= */
+
+.footer {
+  background: #203240;
+  margin-top: 140px;
+  padding-top: 90px;
+  color: rgba(255,255,255,0.9);
+ 
+  position: relative;
+  overflow: hidden;
+}
+
+/* linha subtil topo */
+.footer::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 92%;
+  height: 1px;
+
+  background: rgba(255,255,255,0.08);
+}
+
+/* CONTAINER */
+.footer-container {
+  width: min(1400px, 92%);
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 120px;
+
+  padding-bottom: 70px;
+}
+
+/* =========================================
+   BRAND
+========================================= */
+
+.footer-brand {
+  max-width: 450px;
+}
+
+.footer-brand img {
+  width: 140px;
+  margin-bottom: -15px;
+}
+
+.footer-brand h3 {
+  font-size: 0.82rem;
+
+  letter-spacing: 5px;
+  font-weight: 350;
+
+  color: rgba(255,255,255,0.92);
+
+  margin-top: -8px;
+  margin-bottom: 30px;
+}
+
+.footer-brand p {
+  line-height: 1.8;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.7);
+}
+
+/* =========================================
+   LINKS
+========================================= */
+
+.footer-links {
+  display: flex;
+  gap: 90px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-col h4 {
+  color: white;
+  font-size: 1.05rem;
+  margin-bottom: 24px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* LINKS */
+.footer-col a {
+  color: rgba(255,255,255,0.65);
+  text-decoration: none;
+
+  margin-bottom: 14px;
+
+  transition: all 0.25s ease;
+}
+
+/* HOVER */
+.footer-col a:hover {
+  color: #d8b25a;
+  transform: translateX(3px);
+}
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+
+  padding: 26px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 0.92rem;
+  color: rgba(255,255,255,0.45);
+  letter-spacing: 0.3px;
+}
+
+/* =========================================
+   RESPONSIVO
+========================================= */
+
+@media (max-width: 950px) {
+
+  .footer-container {
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  .footer-links { 
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .footer {
+    padding-top: 70px;
+  }
+
+  .footer-brand img {
+    width: 110px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+}
+
+.footer-bottom a {
+  color: inherit;        /* fica igual ao texto */
+  text-decoration: none; /* remove sublinhado */
+  transition: color 0.2s ease;
+}
+
+.footer-bottom a:hover {
+  color: #00bcd4; /* ou a cor que quiseres para destaque */
+  text-decoration: underline; /* opcional */
+}

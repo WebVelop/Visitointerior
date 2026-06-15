@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contacto | VisitoInterior</title>  
+  <link rel="icon" type="image/png" href="../img/logo.png">
+
+
+  <link rel="stylesheet" href="../css/contacto.css">
+  <link rel="stylesheet" href="../css/footer.css">
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body> 
+ 
+<!-- ========================================= 
+     HEADER
+========================================= -->
+
+<header class="header">
+
+  <a href="../index.html" class="logo">
+    <img src="../img/logo.png" alt="VisitOInterior">
+  </a>
+
+  <nav class="menu">
+    <a href="../index.html">Início</a>
+    <a href="explorar.html">Explorar</a>
+    <a href="agenda.html">Agenda</a>
+    <a class="active" href="contacto.html">Contacto</a>
+  </nav>
+
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+      <div class="language-selector">
+
+        <button class="lang-current" id="langBtn">
+          <img src="../img/pt.jpeg" alt="Português">
+        </button>
+
+      <div class="lang-dropdown" id="langDropdown">
+
+        <a href="../en/contact.html">
+          <img src="../img/en.png" alt="English">
+        </a>
+
+        <a href="../es/contacto.html">
+            <img src="../img/es.png" alt="Español">
+        </a>
+      </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<section class="contacto-hero">
+
+  <div class="hero-content">
+
+    <span class="hero-mini">
+      VISITOINTERIOR
+    </span>
+
+    <h1>
+      Vamos conversar.
+    </h1>
+
+    <p>
+      Tem um evento, alojamento, experiência ou sugestão?
+      Entre em contacto connosco e ajude-nos a mostrar o melhor do interior de Portugal.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================
+     CONTACTO
+========================================= -->
+
+<section class="contacto-section">
+
+  <!-- ESQUERDA -->
+
+  <div class="contacto-info">
+
+    <div class="info-card">
+
+      <span>EMAIL</span>
+
+      <h3>
+        visitointerior@gmail.com
+      </h3>
+
+      <p>
+        Para parcerias, sugestões,
+        divulgação de eventos ou informações gerais.
+      </p>
+
+    </div>
+
+    <div class="info-card">
+
+      <span>INSTAGRAM</span>
+
+      <h3>
+        @visitointerior
+      </h3>
+
+      <p>
+        Acompanhe novos locais,
+        eventos e experiências pelo interior.
+      </p>
+
+    </div>
+
+    <div class="info-card">
+
+      <span>LOCALIZAÇÃO</span>
+
+      <h3>
+        Interior de Portugal
+      </h3>
+
+      <p>
+        Serra da Estrela, Beiras,
+        aldeias históricas e muito mais.
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- DIREITA -->
+<div class="contacto-form">
+
+  <form
+    id="contactForm"
+    action="https://formsubmit.co/visitointerior@gmail.com"
+    method="POST"
+  >
+
+    <!-- CONFIG FORM SUBMIT -->
+    <input type="hidden" name="_subject" value="Nova mensagem - VisitoInterior">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <div class="input-group">
+      <label>Nome</label>
+
+      <input
+        type="text"
+        name="nome"
+        placeholder="O seu nome"
+        required
+      >
+    </div>
+
+    <div class="input-group">
+      <label>Email</label>
+
+      <input
+        type="email"
+        name="email"
+        placeholder="O seu email"
+        required
+      >
+    </div>
+
+    <div class="input-group">
+      <label>Mensagem</label>
+
+      <textarea
+        name="mensagem"
+        placeholder="Escreva aqui a sua mensagem"
+        required
+      ></textarea>
+    </div>
+
+    <div class="form-consent">
+      <label>
+        <input type="checkbox" required>
+
+        Li e aceito a
+        <a href="../paginas/privacidade.html" target="_blank">
+          Política de Privacidade
+        </a>
+      </label>
+    </div>
+
+    <button type="submit">
+      Enviar mensagem
+    </button>
+
+  </form>
+
+</div>
+
+<div id="mensagem-sucesso" class="mensagem-sucesso">
+  A sua mensagem foi enviada com sucesso.
+  A equipa VisitoInterior responderá com a maior brevidade possível.
+</div>
+
+<div id="popup-sucesso" class="popup-sucesso">
+
+  <div class="popup-box">
+
+    <h3>Mensagem enviada com sucesso</h3>
+
+    <p>
+      Obrigado pelo seu contacto.
+      A equipa VisitoInterior responderá com a maior brevidade possível.
+    </p>
+
+    <a href="../index.html" class="popup-btn">
+      Voltar à página principal
+    </a> 
+
+  </div>
+
+</div>
+
+
+</section>
+
+
+  <!-- =========================================
+       FOOTER
+  ========================================= -->
+  <footer class="footer reveal">
+
+  <div class="footer-container">
+
+    <!-- ESQUERDA -->
+    <div class="footer-brand">
+      <img src="../img/logo.png" alt="VisitOInterior">
+
+      <h3>VISITOINTERIOR</h3>
+
+      <p>
+        Descobre o verdadeiro interior de Portugal.
+        Natureza, cultura e experiências autênticas.
+      </p>
+    </div>
+
+    <!-- LINKS -->
+    <div class="footer-links">
+
+      <div class="footer-col">
+        <h4>Navegação</h4>
+
+        <a href="../index.html">Início</a>
+        <a href="../paginas/explorar.html">Explorar</a>
+        <a href="../paginas/agenda.html">Agenda</a>
+        <a href="../paginas/contacto.html">Contacto</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Agenda</h4>
+
+        <a href="../paginas/agenda.html">Eventos</a>
+
+      </div>
+
+      <div class="footer-col">
+        <h4>Contactos</h4>
+
+        <a href="mailto:visitointerior@gmail.com?subject=Contacto%20VisitOInterior">Email </a>
+        <a href="https://www.instagram.com/visitointerior?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=100064827042107">Facebook</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Informação</h4>
+
+        <a href="../paginas/privacidade.html">Política de Privacidade</a>
+        <a href="../paginas/termos.html">Termos e Condições</a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- LINHA FINAL -->
+  <div class="footer-bottom">
+    <p>
+      Copyright © <a href="../index.html">VisitoInterior</a> — Todos os direitos reservados |
+      Desenvolvido por
+      <a href="https://www.webvelop.pt" target="_blank">Webvelop</a>
+    </p>
+  </div>
+
+</footer>
+
+
+<script src="../js/contacto.js"></script>
+
+</body>
+</html>
